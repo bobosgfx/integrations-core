@@ -2,8 +2,9 @@
 
 -----
 
-The package `datadog-checks-base` provides all the functionality and utilities necessary for writing Agent Integrations.
-Most importantly it provides the [AgentCheck](api.md#agentcheck) base class from which every Check must be inherited.
+The [Base package](https://github.com/DataDog/integrations-core/tree/master/datadog_checks_base)
+provides all the functionality and utilities necessary for writing Agent Integrations. Most importantly it provides
+the [AgentCheck](api.md#agentcheck) base class from which every Check must be inherited.
 
 You would use it like so:
 

@@ -2,6 +2,14 @@
 
 -----
 
+## File naming
+
+Often, libraries that interact with a product will name their packages after the product. So if you name a
+file `<PRODUCT_NAME>.py`, and inside try to import the library of the same name, you will get import errors
+that will be difficult to diagnose.
+
+**Never name a Python file the same as the integration's name.**
+
 ## Stateful checks
 
 Since Agent v6, every instance of [AgentCheck](../base/api.md#agentcheck) corresponds to a single YAML instance of an
@@ -27,7 +35,7 @@ accepts is redundant and wasteful since you are parsing the same configuration a
             ...
     ```
 
-=== "Do NOT this"
+=== "Do NOT do this"
     ```python
     class AwesomeCheck(AgentCheck):
         def check(self, instance):
